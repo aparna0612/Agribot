@@ -1,0 +1,11 @@
+<launch>
+
+<include file="$(find agri_bot_moveit)/launch/agri_bot_moveit.launch"/>
+
+<node pkg = "agri_bot_task5" type = "aruco_marker_detection.py" name = "aruco_tf" output = "screen" />
+
+
+<node pkg = "agri_bot_task5" type = "new_Script.py" name = "object_detection_manipulation" output = "screen" />
+
+
+</launch>
